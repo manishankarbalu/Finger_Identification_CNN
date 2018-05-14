@@ -6,11 +6,12 @@ Refrence:[Pytorch](https://pytorch.org/)
 ## Requirements
 
 	 1. Pytorch
-         2. torchsummary
+	 2. torchsummary
 	 3. Pygame
 	 4. Opencv
 
 <br/>
+
 ## Usage
 
 ### Prepare Training Dataset 
@@ -19,7 +20,7 @@ Create folder named ``data`` . Then create folders according to your class-label
 To capture images run ``python data_collection.py`` specify the correct folder to the classes accordingly.
 Then, run ``mask.py`` to achieve binary mask that is defined by grayscaling and blurring the image.
 
-######Folder structure
+###### Folder structure
 
 ```
 Root
@@ -94,7 +95,7 @@ Average accuracy on the test set is 97.28448438289819
 ![Screenshot](./assets/loss.png "Loss image")
 
 ###### Output
-![Screenshot](./assets/loss.png "Output")
+![Screenshot](./assets/output.png "Output")
 
 ###### Total CNN Architecture graph
 
