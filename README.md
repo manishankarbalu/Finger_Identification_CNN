@@ -95,7 +95,7 @@ Average accuracy on the test set is 97.28448438289819
 ![Screenshot](./assets/loss.png "Loss image")
 
 ###### Output
-![Screenshot](./assets/loss.png "Output")
+![Screenshot](./assets/output.png "Output")
 
 #### ToDo
 - [x] Train.
