@@ -99,11 +99,11 @@ Average accuracy on the test set is 97.28448438289819
 
 ###### Total CNN Architecture graph
 
-![svg](output_29_14.svg)
+![svg](./assets/output_29_14.svg)
 
 ###### Conv1 visualization
 
-![png](output_28_1.png)
+![png](./assets/output_28_1.png)
 #### ToDo
 - [x] Train.
 - [x] Test.
