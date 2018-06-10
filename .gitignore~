@@ -4,8 +4,6 @@ data/
 #Ignore checkpoint folder
 .ipynb_checkpoints
 
-model_chk.pt
-
 #Ignore floyd files
 .floydexpt
 .floydignore
