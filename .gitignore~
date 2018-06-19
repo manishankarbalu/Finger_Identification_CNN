@@ -1,9 +1,0 @@
-#Ignore data folder
-data/
-
-#Ignore checkpoint folder
-.ipynb_checkpoints
-
-#Ignore floyd files
-.floydexpt
-.floydignore

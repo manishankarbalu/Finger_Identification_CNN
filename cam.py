@@ -64,7 +64,21 @@ def Classify(model, image):
 def process_image(img):
     image_x = 64
     image_y = 64
-    img = cv2.resize(img, (image_x, image_y))
+    #img = cv2.imread(data_folder_path+sub_folders+'/'+file)
+    #print img.shape
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    #print img.shape
+    img = cv2.GaussianBlur(img, (7,7), 3)
+    #print img.shape
+    img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 2)
+    #print img.shape
+    ret, new = cv2.threshold(img, 25, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+    #img = new
+    #print new.shape
+    new = cv2.cvtColor(new,cv2.COLOR_GRAY2RGB)
+    #print new.shape
+    #cv2.imwrite('aa.png')
+    img = cv2.resize(new, (image_x, image_y))
     img = np.array(img, dtype=np.float64)
     img = np.reshape(img, (image_x, image_y,-1))
     #print img.shape
